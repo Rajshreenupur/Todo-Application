@@ -1,0 +1,69 @@
+Creating a backend task for a fresher MERN stack developer is a great way to assess their skills and understanding of the core technologies involved. Below is a task description for building a backend for a todo application using the MERN stack (MongoDB, Express.js, Node.js):
+
+*Task: Build a Todo Application Backend*
+
+*Description:*
+You are tasked with building the backend for a simple Todo application. The backend should provide API endpoints to create, read, update, and delete tasks. You will use the MERN stack, with MongoDB for data storage, Express.js for building the API, and Node.js for the server. Follow the guidelines and requirements below:
+
+*Requirements:*
+
+1. *Setup:*
+   - Create a new Node.js project using a package manager of your choice (npm or yarn).
+   - Set up an Express.js server.
+
+2. *Database:*
+   - Use MongoDB as the database to store todo tasks.
+   - Create a MongoDB schema for tasks with at least the following fields: `title`, `description`, `completed`, and `createdAt`.
+
+3. *API Endpoints:*
+   - Implement RESTful API endpoints for CRUD operations on tasks.
+   - Create endpoints for:
+     - Creating a new task
+     - Getting a list of all tasks
+     - Getting a single task by ID
+     - Updating a task by ID
+     - Deleting a task by ID
+
+4. *Validation:*
+   - Implement validation for creating and updating tasks. Ensure that required fields are present and have valid data types.
+
+5. *Error Handling:*
+   - Implement error handling for all endpoints. Return appropriate HTTP status codes and error messages in case of errors.
+
+6. *Middleware:*
+   - Use middleware, such as body parser and CORS, as needed.
+   - Implement middleware for logging requests to the console.
+
+7. *Testing:*
+   - Test your API using a tool like Postman or Insomnia to ensure that all endpoints work as expected.
+
+8. *Documentation:*
+   - Provide clear and concise documentation for your API, including information on how to use each endpoint.
+
+9. *Security:*
+   - Ensure that your application is secure against common vulnerabilities like SQL injection and cross-site scripting (XSS).
+   - Use environment variables for sensitive information like database credentials.
+
+10. *Version Control:*
+    - Use Git for version control. Commit your code regularly with meaningful commit messages.
+    - Push your code to a repository on a platform like GitHub or GitLab.
+
+11. *Bonus (Optional):*
+    - Implement user authentication and authorization for creating, updating, and deleting tasks.
+    - Dockerize your application for easy deployment.
+    - Implement pagination for listing tasks.
+    - Write unit tests for your API endpoints.
+
+*Submission:*
+- Share the GitHub/GitLab repository link with your code.
+- Include instructions on how to run your application locally.
+
+*Evaluation Criteria:*
+Your project will be evaluated based on the following criteria:
+- Code quality and organization
+- Functionality and correctness of the API endpoints
+- Documentation and clarity of instructions
+- Security practices
+- Use of best practices for Node.js and Express.js
+
+This task should give the fresher MERN stack developer an opportunity to demonstrate their skills in building a backend application using the MERN stack and following best practices for web development.

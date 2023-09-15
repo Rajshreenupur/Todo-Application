@@ -1,0 +1,114 @@
+Todo Application API Documentation
+
+Base URL: Replace your-api-url with the actual URL where your API is hosted.
+
+Create a New Task
+Endpoint: POST /tasks
+Description: Create a new task.
+Request Body:
+title (string, required): The title of the task.
+description (string): Description of the task.
+Example Request:
+ 
+POST /tasks
+{
+  "title": "Complete Project",
+  "description": "Finish the MERN stack project."
+}
+Response:
+Status: 201 Created
+Body: The created task object.
+Example Response:
+ 
+{
+  "_id": "task-id-123",
+  "title": "Complete Project",
+  "description": "Finish the MERN stack project.",
+  "completed": false,
+  "createdAt": "2023-09-15T12:00:00Z"
+}
+Get a List of All Tasks
+Endpoint: GET /tasks
+Description: Retrieve a list of all tasks.
+Response:
+Status: 200 OK
+Body: An array of task objects.
+Example Response:
+ 
+[
+  {
+    "_id": "task-id-123",
+    "title": "Complete Project",
+    "description": "Finish the MERN stack project.",
+    "completed": false,
+    "createdAt": "2023-09-15T12:00:00Z"
+  },
+  {
+    "_id": "task-id-124",
+    "title": "Review Code",
+    "description": "Review and refactor the code.",
+    "completed": true,
+    "createdAt": "2023-09-16T14:30:00Z"
+  }
+]
+Get a Single Task by ID
+Endpoint: GET /tasks/:id
+Description: Retrieve a single task by its unique ID.
+Example Request:
+ 
+GET /tasks/task-id-123
+Response:
+Status: 200 OK
+Body: The task object.
+Example Response:
+ 
+{
+  "_id": "task-id-123",
+  "title": "Complete Project",
+  "description": "Finish the MERN stack project.",
+  "completed": false,
+  "createdAt": "2023-09-15T12:00:00Z"
+}
+Update a Task by ID
+Endpoint: PATCH /tasks/:id
+Description: Update a task by its ID.
+Request Body: (You can include any combination of the following fields)
+title (string): New title for the task.
+description (string): New description for the task.
+completed (boolean): Set to true to mark the task as completed.
+Example Request:
+ 
+PATCH /tasks/task-id-123
+{
+  "completed": true
+}
+Response:
+Status: 200 OK
+Body: The updated task object.
+Example Response:
+ 
+{
+  "_id": "task-id-123",
+  "title": "Complete Project",
+  "description": "Finish the MERN stack project.",
+  "completed": true,
+  "createdAt": "2023-09-15T12:00:00Z"
+}
+Delete a Task by ID
+Endpoint: DELETE /tasks/:id
+Description: Delete a task by its ID.
+Example Request:
+ 
+DELETE /tasks/task-id-123
+Response:
+Status: 200 OK
+Body: The deleted task object.
+Example Response:
+ 
+{
+  "_id": "task-id-123",
+  "title": "Complete Project",
+  "description": "Finish the MERN stack project.",
+  "completed": true,
+  "createdAt": "2023-09-15T12:00:00Z"
+}
